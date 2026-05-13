@@ -5,15 +5,15 @@
 }
 
 :root {
-    --primary-color: #8B6F47;
+    --primary-color: #3e2723;
     --secondary-color: #D4AF37;
-    --dark-color: #2C2C2C;
-    --light-color: #F5F5F5;
+    --dark-color: #1a1a1a;
+    --light-color: #fafafa;
     --text-color: #333;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Cairo', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
 }
@@ -277,34 +277,35 @@ h2 {
 }
 
 .contact-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    gap: 3rem;
 }
 
-.contact-form {
-    background: rgba(255,255,255,0.1);
-    padding: 2rem;
-    border-radius: 10px;
+.centered-contact {
+    text-align: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    min-width: 300px;
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
+.centered-socials {
+    justify-content: center;
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-family: inherit;
-    font-size: 1rem;
+.whatsapp-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-.form-group textarea {
-    resize: vertical;
+.whatsapp-link:hover {
+    color: var(--secondary-color);
 }
 
 .contact-info {
