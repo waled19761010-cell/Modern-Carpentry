@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://waled19761010-cell.github.io/Modern-Carpentry/sitemap.xml
